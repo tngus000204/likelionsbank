@@ -10,8 +10,7 @@ def show_menu():
     print("2. 입금하기")
     print("3. 출금하기")
     print("4. 전체 조회")
-    print("5. 계좌 삭제")
-    print("6. 종료하기")
+    print("5. 종료하기")
     print("=====================")
 
 
@@ -69,15 +68,6 @@ while 1:
             print(" / 잔액 : ", account.balance)
         continue
     elif menu == 5:
-        account_number = int(input("삭제하실 계좌번호를 입력해주세요: "))
-        for account in account_list:
-            if account.account_number == account_number:
-                account_list.remove(account)
-                print("##계좌가 삭제되었습니다##") 
-        else :
-            print("존재하지 않는 계좌번호입니다.")
-        continue
-    elif menu == 6:
         exit()
     else :
         print("잘못 입력하셨습니다")
